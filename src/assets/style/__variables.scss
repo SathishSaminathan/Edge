@@ -1,0 +1,42 @@
+$choose-color: 'blue'; //blue | red | green
+$theme-color: #7A3757;
+$theme-light: #EEE6EA;
+$theme-dark: #084ba2;
+$theme-second-color: #3aa7dd;
+$spacing: 0 5 10 15 20 25 30;
+$white-color: #ffffff;
+$black-color: #000000;
+$light-black: #121212;
+$site-black: #666666;
+$gray-color: #d9d9d9;
+$light-gray: #f2f2f2;
+$light-blue: #dfe8f7;
+$red-color: #A53232;
+$border-gray: #e0e0e0;
+$landing-gray: #fafafa; // this color is used in landing page section
+$tag-inactive: #999999;
+$tag-active: #ff5500;
+$blue-color: #67c3ef;
+$yellow-color: #fabb3d;
+$green-color: #769E79;
+$error-bck: #ffd2d2;
+$lavender-color: #dfedfa;
+$label-color: #dcb9de;
+$orange-color: #e2581a; 
+$scroll-thumb: #c1c1c1;
+$scroll-track: #f1f1f1;
+
+@if $choose-color == 'blue' {
+    $theme-color: #7A3757;
+    $theme-second-color: #3aa7dd;
+}
+
+@else if $choose-color == 'red' {
+    $theme-color: #800000;
+    $theme-second-color: #b20000;
+}
+
+@else if $choose-color == 'green' {
+    $theme-color: #259b24;
+    $theme-second-color: #8bc34a;
+}
