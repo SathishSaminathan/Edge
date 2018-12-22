@@ -1,0 +1,64 @@
+.header__style {
+  background-color: #7A3757;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__style span {
+  float: left;
+  text-align: center;
+  color: #EEE6EA;
+  padding: 14px;
+  background-color: #e2581a;
+}
+
+.header__style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.header__style ul li {
+  float: right;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
+  border: 4px solid #7A3757;
+}
+
+.header__style ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 8px;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #fabb3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fabb3d), to(#fabb3d)) bottom center no-repeat;
+  background: linear-gradient(0deg, #fabb3d, #fabb3d) bottom center no-repeat;
+  background-size: 0px 3px;
+}
+
+.cool-link:hover::after {
+  background-size: 100% 3px;
+}
+/*# sourceMappingURL=Header.css.map */
