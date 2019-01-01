@@ -1,0 +1,49 @@
+.search_bar {
+  border: 1px solid #fabb3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  border-radius: 50px;
+}
+
+.search_bar input {
+  font-size: 50px;
+  padding: 10px;
+  outline: none;
+  width: 90%;
+  border-radius: 47px;
+  border: none;
+}
+
+.search_bar .search_icon {
+  font-size: 40px;
+  width: 10%;
+}
+
+.container {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=SearchBar.css.map */
