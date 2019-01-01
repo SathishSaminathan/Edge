@@ -1,13 +1,28 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+
+import Loader from "../widgets/Loader/Loader";
 
 class Layout extends Component {
-    render () {
-        return (
-            <React.Fragment>
-                 {this.props.children}
-            </React.Fragment>
-        )
-    }
+  state = {
+    PageLoader: true
+  };
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        PageLoader: false
+      });
+    }, 1000);
+  }
+
+  render() {
+      const {PageLoader}= this.state
+    return PageLoader ? (
+      <Loader />
+    ) : (
+      <React.Fragment>{this.props.children}</React.Fragment>
+    );
+  }
 }
 
-export default Layout
+export default Layout;
