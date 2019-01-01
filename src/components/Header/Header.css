@@ -25,6 +25,13 @@
   /* height: 58px; */
 }
 
+.header__style .logo_text {
+  background-color: #7A3757;
+  color: white;
+  font-family: "Happy Monkey";
+  font-size: 25px;
+}
+
 .header__style ul {
   list-style-type: none;
   margin: 0;
