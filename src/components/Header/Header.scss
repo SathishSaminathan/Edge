@@ -8,11 +8,12 @@
   align-items: center;
   justify-content: space-between;
   span {
-    float: left;
-    text-align: center;
-    color: $theme-light;
+    /* float: left; */
+    /* text-align: center; */
+    color: #eee6ea;
     padding: 14px;
-    background-color: $orange-color;
+    background-color: #e2581a;
+    /* height: 58px; */
   }
   ul {
     list-style-type: none;
