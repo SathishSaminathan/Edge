@@ -15,6 +15,12 @@
     background-color: #e2581a;
     /* height: 58px; */
   }
+  .logo_text {
+    background-color: $theme-color;
+    color: white;
+    font-family: "Happy Monkey";
+    font-size: 25px;
+  }
   ul {
     list-style-type: none;
     margin: 0;
