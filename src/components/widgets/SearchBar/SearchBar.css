@@ -20,9 +20,10 @@
   font-size: 50px;
   padding: 10px;
   outline: none;
-  width: 90%;
+  width: 85%;
   border-radius: 47px;
   border: none;
+  font-family: "Roboto";
 }
 
 .search_bar .search_icon {
@@ -30,12 +31,12 @@
   width: 10%;
 }
 
-.search_bar .loader {
+.search_bar .search_icon .search_loader {
   height: 40px !important;
   width: 40px !important;
-  border: 3px solid #121212;
+  border: 6px solid #121212;
   border-radius: 50%;
-  border-top: 3px solid #fabb3d;
+  border-top: 6px solid #fabb3d;
   -webkit-animation: spin 0.5s linear infinite;
           animation: spin 0.5s linear infinite;
 }

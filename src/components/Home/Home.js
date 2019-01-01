@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { debounce } from "lodash";
 
-import SearchBar from "../widgets/SearchBar";
+import SearchBar from "../widgets/SearchBar/SearchBar";
 
 class Home extends Component {
   state = {
@@ -10,12 +10,15 @@ class Home extends Component {
   };
 
   handleSearch = debounce(SearchKey => {
-    this.setState((nextProps, prevState) => {
-      return {
-        SearchKey,
-        IsLoading: true
-      };
-    }, this.cancelLoading);
+    if (SearchKey) {
+      console.log(SearchKey)
+      this.setState((nextProps, prevState) => {
+        return {
+          SearchKey,
+          IsLoading: true
+        };
+      }, this.cancelLoading);
+    }
   }, 1000);
 
   cancelLoading = () => {
