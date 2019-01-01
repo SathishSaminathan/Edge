@@ -3,14 +3,18 @@ import { Glyphicon } from "react-bootstrap";
 
 import "./SearchBar.css";
 
-const SearchBar = ({getSearchKey, IsLoading}) => {
-    console.log("Isloading", IsLoading)
+const SearchBar = ({ getSearchKey, IsLoading }) => {
+  console.log("Isloading", IsLoading);
   return (
     <div className="container">
       <div className="search_bar">
-        <input onChange={(e)=>getSearchKey(e.target.value)}/>
+        <input onChange={e => getSearchKey(e.target.value)} />
         <div className="search_icon">
-          <Glyphicon glyph={IsLoading?"repeat":"search"} />
+          {IsLoading ? (
+            <div className="loader" />
+          ) : (
+            <Glyphicon glyph="search" />
+          )}
         </div>
       </div>
     </div>

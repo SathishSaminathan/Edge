@@ -22,6 +22,15 @@
     font-size: 40px;
     width:10%
   }
+  .loader{
+    height: 40px !important;
+    width: 40px !important;
+    border: 3px solid $light-black;
+    border-radius: 50%;
+    border-top: 3px solid $yellow-color;
+    animation: spin 0.5s linear infinite;
+  }
+  
 }
 
 .container {
@@ -31,3 +40,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
