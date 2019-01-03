@@ -13,7 +13,6 @@ class SearchBar extends Component {
     const { getSearchKey, IsLoading } = this.props;
     console.log("Isloading", IsLoading);
     return (
-      <div className="container">
         <div className="search_bar">
           <input ref="input_ref" onChange={e => getSearchKey(e.target.value)} placeholder="find gyms near me"/>
           <div className="search_icon">
@@ -24,7 +23,6 @@ class SearchBar extends Component {
             )}
           </div>
         </div>
-      </div>
     );
   }
 }

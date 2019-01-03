@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAA;EACjB,OAAO,EAAE,IAAI;CAEhB",
+    "sources": [
+        "HotelList.scss"
+    ],
+    "names": [],
+    "file": "HotelList.css"
+}

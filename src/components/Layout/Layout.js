@@ -4,7 +4,7 @@ import Loader from "../widgets/Loader/Loader";
 
 class Layout extends Component {
   state = {
-    PageLoader: true
+    PageLoader: false
   };
 
   componentDidMount() {
