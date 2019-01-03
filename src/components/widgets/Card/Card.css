@@ -1,0 +1,32 @@
+.card_container {
+  width: 350px;
+  height: 500px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card_container:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_container .card_title {
+  font-family: 'Lato';
+  padding: 5px;
+}
+
+.card_container .card_title .name {
+  float: left;
+}
+
+.card_container .card_title .address {
+  float: right;
+  font-size: 15px;
+}
+
+.card_container .image_rating_area {
+  position: relative;
+}
+/*# sourceMappingURL=Card.css.map */

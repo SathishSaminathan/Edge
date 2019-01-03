@@ -1,0 +1,10 @@
+.result_container {
+  height: 60vh;
+  padding: 10px;
+}
+
+.result_container .results_header {
+  font-family: 'Roboto';
+  font-style: italic;
+}
+/*# sourceMappingURL=Results.css.map */
