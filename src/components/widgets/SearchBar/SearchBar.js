@@ -14,7 +14,7 @@ class SearchBar extends Component {
     console.log("Isloading", IsLoading);
     return (
         <div className="search_bar">
-          <input ref="input_ref" onChange={e => getSearchKey(e.target.value)} placeholder="find gyms near me"/>
+          <input ref="input_ref" onChange={e => getSearchKey(e.target.value)} placeholder="find hotels near me"/>
           <div className="search_icon">
             {IsLoading ? (
               <div className="search_loader" />

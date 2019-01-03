@@ -7,6 +7,7 @@ class Header extends Component {
     return (
       <div className="header__style">
         <span>Logo</span>
+        <span className="logo_text">find hotels</span>
         <ul>
           <li className="cool-link">
             <a href="#home">Login</a>
