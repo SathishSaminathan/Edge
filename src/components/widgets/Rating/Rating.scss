@@ -1,0 +1,62 @@
+@import "../../../assets/style/_variables";
+
+.rating_style {
+  box-shadow: 0px 2px 4px -1px $theme-color;
+  width: 100%;
+  padding-left: 10px;
+  overflow: hidden;
+  // position: relative;
+  border-bottom: 1px solid $theme-color;
+
+  .average_rating {
+    float: left;
+    font-size: 40px;
+    font-family: "Lato";
+    span {
+      display: block;
+    }
+  }
+  .rating_star_area {
+    float: right;
+    padding-right: 10px;
+    &.disabled {
+      &:hover {
+        // cursor: no-drop;
+        .star_rating {
+          cursor: no-drop;
+        }
+      }
+    }
+    .rating_title {
+      padding-left: 5px;
+      position: absolute;
+      font-size: 15px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .star_rating {
+      margin-top: 22px;
+      font-size: 22px;
+      // color: $theme-color;
+      color: black;
+      &:hover {
+        cursor: pointer;
+        // margin-top: 12px;
+        // font-size: 25px;
+        //   color: $danger-red;
+      }
+      &.star_checked {
+        color: $loader-yellow;
+      }
+      &.danger {
+        color: $danger-red;
+      }
+      &.warning {
+        color: $yellow-color;
+      }
+      &.success {
+        color: $theme-color-green;
+      }
+    }
+  }
+}

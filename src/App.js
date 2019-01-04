@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 import Layout from "./components/Layout/Layout";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
+
+import Router from "./routes";
+
+import { BrowserRouter } from "react-router-dom";
 
 import './App.css';
 
@@ -11,7 +14,10 @@ class App extends Component {
     return (
       <Layout>
         <Header/>
-        <Home/>
+        {/* <Home/> */}
+        <BrowserRouter>
+          <Router/>
+        </BrowserRouter>
       </Layout>
     );
   }
